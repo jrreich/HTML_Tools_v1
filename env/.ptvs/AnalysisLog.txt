@@ -2382,3 +2382,33 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Micro
 2016-12-20T23:31:10: Saving group "C:\Users\Jesse\Documents\Programming\Flask\FlaskWebProject1\env\Lib\site-packages\jinja2"
 2016-12-20T23:31:10: End of group "C:\Users\Jesse\Documents\Programming\Flask\FlaskWebProject1\env\Lib\site-packages\jinja2"
 2016-12-20T23:31:11: Deleting 0 files
+
+2017-01-03T00:29:12: Start analysis
+2017-01-03T00:29:12: [WARNING] Library was set explicitly - skipping path detection
+2017-01-03T00:29:12: IncludeModulesFromModulePath = win32com
+2017-01-03T00:29:12: Deleting 642 files
+2017-01-03T00:29:15: Scraping builtin modules
+2017-01-03T00:29:15: Command: C:\Users\reichj\Source\Repos\HTML_Tools_v1\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\PythonScraper.py" C:\Users\reichj\Source\Repos\HTML_Tools_v1\env\.ptvs\ "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\CompletionDB\\"
+2017-01-03T00:29:16: [WARNING] Errors
+Traceback (most recent call last):
+  File "C:\Users\reichj\Source\Repos\HTML_Tools_v1\env\lib\site.py", line 703, in <module>
+    main()
+  File "C:\Users\reichj\Source\Repos\HTML_Tools_v1\env\lib\site.py", line 692, in main
+    aliasmbcs()
+  File "C:\Users\reichj\Source\Repos\HTML_Tools_v1\env\lib\site.py", line 515, in aliasmbcs
+    import locale, codecs
+  File "C:\Users\reichj\Source\Repos\HTML_Tools_v1\env\lib\locale.py", line 19, in <module>
+    import functools
+ImportError: No module named functools
+2017-01-03T00:29:16: [ERROR] Failed to scrape builtin modules (Exit Code: 1)
+2017-01-03T00:29:16: [ERROR] Analysis failed
+System.InvalidOperationException: Failed to scrape builtin modules
+   at Microsoft.PythonTools.Analysis.PyLibAnalyzer.<Scrape>d__53.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PythonTools.Analysis.PyLibAnalyzer.<RunWorker>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.PythonTools.Analysis.PyLibAnalyzer.<Run>d__30.MoveNext()
