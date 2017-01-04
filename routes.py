@@ -1,6 +1,16 @@
+from werkzeug.utils import secure_filename
 from flask import Flask, url_for, request, render_template; 
 from app import app
 import beacon_decode as bcn
+from werkzeug.utils import secure_filename
+
+
+UPLOAD_FOLDER = 'var/uploads'
+ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif','db','zip'])
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 #server/Main
 @app.route('/')
@@ -8,18 +18,6 @@ def index():
     """Renders a sample page."""
     createLink = "<a href = '" + url_for('beacon') + "'>Beacon Decoder</a>"; # url_for usings the function name to point to URL
     return render_template('index3.html')
-            #"""<html>
-            #    <head>
-            #        <title> Jesse's Tools</title>
-            #    </head>
-            #    <body>
-            #        """ + createLink + """
-            #    </body>
-            #</html>""";
-
-#@app.route('/beacon/<beacon>')
-#def beacon_decode(beacon):
-#    return 'beacon decoder ' + beacon
 
 @app.route('/beacon', methods=['GET','POST'])
 def beacon():
@@ -38,7 +36,6 @@ def beacon():
             beaconID15 = bcn1.bcnID15, \
             countrycode = int(bcn1.country_code,2), \
             protocolcode = bcn1.protocol)
-
     else: 
         return '<h2> Invalid Request </h2>'
 
@@ -49,14 +46,15 @@ def rawburst():
         return render_template('BurstAnalysisForm.html')
     elif request.method == 'POST':
         # read input
-        MEOLUT,StartTime = request.form['MEOLUT','StartTime']        
-
-        #find data here
-
-        #return results
+        result = request.form
+        f = request.files['inputfile']
+        
+        print f        
+        f.save(UPLOAD_FOLDER + '/' + secure_filename(f.filename))
         return render_template('BurstAnalysisReturn.html', \
-            MEOLUT = MEOLUT, \
-            StartTime = StartTime)
+            #MEOLUT = result['MEOLUT'], \
+            #StartTime = result['StartTime'], \
+            file_name = secure_filename(f.filename))
 
 
     else: 

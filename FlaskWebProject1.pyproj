@@ -45,6 +45,9 @@
     <Content Include="static\styles\mystylesheet2.css" />
     <Content Include="templates\BeaconDecoder3.html" />
     <Content Include="templates\RawBurstAnalyzer.html" />
+    <Content Include="templates\BurstAnalysisReturn.html">
+      <Publish>True</Publish>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
