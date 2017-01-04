@@ -1,0 +1,16 @@
+sys
+_is_writeable
+types
+ctypes
+os
+SHGetSpecialFolderPath
+logger
+_find_gen_dir
+MAX_PATH
+_create_comtypes_gen_package
+logging
+_get_appdata_dir
+tempfile
+_get_module_filename
+GetModuleFileName
+CSIDL_APPDATA

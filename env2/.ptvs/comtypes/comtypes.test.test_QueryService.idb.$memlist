@@ -1,0 +1,7 @@
+IAccessible
+GetModule
+TestCase
+CreateObject
+POINTER
+comtypes
+unittest

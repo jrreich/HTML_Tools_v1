@@ -1,0 +1,14 @@
+connectionpoints
+oleaut32
+ctypes
+ACTIVEOBJECT_WEAK
+automation
+w_getopt
+register
+RegisterActiveObject
+RevokeActiveObject
+IClassFactory
+localserver
+ACTIVEOBJECT_STRONG
+inprocserver
+comtypes

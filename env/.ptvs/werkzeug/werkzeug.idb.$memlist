@@ -4,7 +4,7 @@ formparser
 ModuleType
 test
 wrappers
-contrib
+routing
 exceptions
 _reloader
 items
@@ -25,11 +25,10 @@ script
 sys
 http
 old_module
-routing
+contrib
 posixemulation
 new_module
 useragents
-debug
 iteritems
 __version__
 attribute_modules

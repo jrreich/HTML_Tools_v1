@@ -1,0 +1,12 @@
+ctypes
+IUnknown
+_is_object
+comtypes
+ERRORS_BAD_CONTEXT
+MethodCaller
+hres
+__all__
+_Dispatch
+Dispatch
+COMError
+_Collection

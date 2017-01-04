@@ -1,0 +1,11 @@
+method_count
+GUID
+windll
+HRESULT
+byref
+POINTER
+IUnknown
+ut
+main
+STDMETHOD
+BasicTest

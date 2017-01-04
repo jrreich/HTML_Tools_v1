@@ -1,0 +1,14 @@
+QueryPathOfRegTypeLib
+LoadRegTypeLib
+os
+TKIND_ENUM
+TKIND_DISPATCH
+LoadTypeLibEx
+byref
+POINTER
+DISPATCH_METHOD
+GUID
+Test
+COMError
+TKIND_INTERFACE
+unittest

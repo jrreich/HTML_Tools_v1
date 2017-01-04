@@ -1,0 +1,10 @@
+isndarray
+datetime64
+is_64bits
+numpy
+VARIANT_dtype
+_make_variant_dtype
+com_null_date64
+HAVE_NUMPY
+sys
+isdatetime64
